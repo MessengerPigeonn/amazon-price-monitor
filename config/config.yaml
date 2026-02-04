@@ -1,0 +1,28 @@
+amazon:
+  marketplace: "www.amazon.com"
+  requests_per_second: 1.0
+
+keepa:
+  requests_per_minute: 60
+  domain: 1  # 1 = .com
+
+database:
+  echo: false
+
+monitoring:
+  check_interval_minutes: 60
+  price_drop_threshold_percent: 10.0
+  clearance_keywords:
+    - clearance
+    - closeout
+    - liquidation
+    - discontinued
+  min_savings_percent: 20.0
+  target_roi_percent: 30.0
+  fba_fee_percent: 15.0
+  referral_fee_percent: 15.0
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  reload: false
